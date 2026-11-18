@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveBite - Photo Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+    <h1>SaveBite</h1>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a >
+        <a href="menu.html">Menu</a >
+        <a href="deals.html">Food Deals</a >
+        <a href="points.html">My Rewards</a >
+    </nav>
+    </header>
+        <p>Meal Completion Verification</p >
+
+    <main class="photo-main">
+        <h2>Upload Your Plate Photo</h2>
+
+        <p>
+            After finishing your meal, take a photo of your plate
+            and upload it for verification.
+        </p >
+
+<div class="photo-preview">
+    <img
+        id="plate-preview"
+        src=""
+        alt="Plate Preview"
+        style="display: none; max-width: 100%; max-height: 250px;"
+    >
+
+    <p id="photo-placeholder">
+        Your photo will appear here.
+    </p >
+</div>
+
+            <label for="plate-photo" class="upload-button">
+    Choose Photo
+</label>
+
+<input
+    type="file"
+    id="plate-photo"
+    accept="image/*"
+    capture="environment"
+    onchange="previewPhoto(event)"
+    style="display: none;"
+>
+
+           <button onclick="submitPhoto()">
+    Submit Photo
+</button>
+
+<button
+    id="verify-button"
+    onclick="verifyPhoto()"
+    style="display: none;"
+>
+    Simulate Photo Approval
+</button>
+
+<p id="photo-message"></p >
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

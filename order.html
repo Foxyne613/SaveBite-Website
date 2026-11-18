@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveBite - Order Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <header class="site-header">
+    <h1>SaveBite</h1>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a >
+        <a href="menu.html">Menu</a >
+        <a href="deals.html">Food Deals</a >
+        <a href="points.html">My Rewards</a >
+    </nav>
+    </header>
+        <p>Order Confirmation</p >
+
+    <main class="order-main">
+
+        <h2>Review Your Order</h2>
+
+        <div class="order-card">
+
+            <div class="order-row">
+                <span>Food</span>
+                <strong id="order-food">Loading...</strong>
+            </div>
+
+            <div class="order-row">
+                <span>Portion</span>
+                <strong id="order-portion">Loading...</strong>
+            </div>
+
+            <div class="order-row">
+                <span>Price</span>
+                <strong id="order-price">Loading...</strong>
+            </div>
+
+            <div class="order-total">
+                <span>Total</span>
+                <strong id="order-total">Loading...</strong>
+            </div>
+
+        </div>
+
+        <p class="order-note">
+            Thank you for choosing a suitable portion
+            and helping reduce food waste!
+        </p >
+
+        <button onclick="placeOrder()">
+            Place Order
+        </button>
+
+        <p>
+            <a href=" ">Back to Menu</a >
+        </p >
+
+        <p id="order-message"></p >
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

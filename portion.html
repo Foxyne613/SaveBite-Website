@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SaveBite - Portion Selection</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+    <h1>SaveBite</h1>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a >
+        <a href="menu.html">Menu</a >
+        <a href="deals.html">Food Deals</a >
+        <a href="points.html">My Rewards</a >
+    </nav>
+    </header>
+
+        <p>Choose Your Portion</p >
+
+
+    <main>
+
+        <h2 id="food-name">Your Food</h2>
+
+        <p>Select the portion that suits you.</p >
+
+        
+<div class="portion-container">
+    <div class="portion-card">
+        <h3>Small Portion</h3>
+        <p>Less food, less waste!</p >
+        <h2 id="small-price">Loading...</h2>
+        <button onclick="choosePortion('Small')">Choose Small</button>
+    </div>
+
+    <div class="portion-card">
+        <h3>Regular Portion</h3>
+        <p>A regular meal for you.</p >
+        <h2 id="regular-price">Loading...</h2>
+        <button onclick="choosePortion('Regular')">Choose Regular</button>
+    </div>
+
+    <div class="portion-card">
+        <h3>Large Portion</h3>
+        <p>More food for a bigger appetite.</p >
+        <h2 id="large-price">Loading...</h2>
+        <button onclick="choosePortion('Large')">Choose Large</button>
+    </div>
+</div>
+
+        <p id="selection-message">
+
+            Please choose your portion.
+
+        </p >
+
+        <div class="suitable-confirm">
+    <label>
+        <input type="checkbox" id="suitable-confirm">
+        I confirm this portion suits my appetite.
+    </label>
+</div>
+        <button onclick="confirmPortion()">
+
+            Confirm Selection
+
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

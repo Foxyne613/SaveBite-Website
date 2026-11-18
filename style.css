@@ -1,0 +1,573 @@
+
+body {
+    background-color: #FBF7EC;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #145B3C;
+    font-size: 36px;
+}
+
+h2 {
+    color: #28794E;
+}
+
+p {
+    color: #718074;
+}
+
+button {
+    background-color: #145B3C;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Food Menu Page */
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 35px auto;
+    max-width: 1000px;
+}
+
+.food-card {
+    background-color: white;
+    width: 240px;
+    padding: 25px 15px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-icon {
+    font-size: 65px;
+    margin: 15px;
+}
+
+.food-card h3 {
+    color: #145B3C;
+    font-size: 20px;
+}
+
+.food-card p {
+    color: #D49A32;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.food-card button {
+    background-color: #145B3C;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.food-card button:hover {
+    background-color: #28794E;
+}
+
+/* Mobile Layout */
+
+@media (max-width: 600px) {
+    .food-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .food-card {
+        width: 90%;
+        max-width: 320px;
+    }
+}
+
+/* Portion Selection Page */
+
+.portion-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 35px auto;
+    max-width: 800px;
+}
+
+.portion-card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
+
+.portion-card h3 {
+    color: #145B3C;
+    font-size: 22px;
+}
+
+.portion-card p {
+    color: #718074;
+}
+
+.portion-card h2 {
+    color: #D49A32;
+    font-size: 25px;
+}
+
+#selection-message {
+    color: #145B3C;
+    font-weight: bold;
+    margin: 25px;
+}
+
+@media (max-width: 600px) {
+    .portion-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portion-card {
+        width: 90%;
+        max-width: 320px;
+    }
+}
+
+/* Order Confirmation Page */
+
+.order-main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+.order-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin: 30px auto;
+}
+
+.order-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 18px 0;
+    border-bottom: 1px solid #eeeeee;
+    color: #718074;
+}
+
+.order-row strong {
+    color: #145B3C;
+    text-align: right;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #145B3C;
+}
+
+.order-note {
+    color: #718074;
+    line-height: 1.7;
+    margin: 25px 0;
+}
+
+.order-main a {
+    color: #28794E;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#order-message {
+    color: #145B3C;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+/* Photo Verification Page */
+.photo-main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+.photo-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin: 30px auto;
+}
+
+.photo-preview {
+    min-height: 180px;
+    border: 2px dashed #B8C8B9;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.photo-preview p {
+    color: #718074;
+}
+
+.photo-card input {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+#photo-message {
+    color: #145B3C;
+    font-weight: bold;
+    line-height: 1.6;
+}
+.upload-button {
+    display: inline-block;
+    background-color: #145B3C;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 15px;
+}
+
+.upload-button:hover {
+    background-color: #28794E;
+}
+
+/* My Rewards Page */
+
+.points-main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+.points-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin: 30px auto;
+}
+
+.points-icon {
+    font-size: 55px;
+    margin: 10px;
+}
+
+.points-card h3 {
+    color: #145B3C;
+}
+
+#points-total {
+    color: #D49A32;
+    font-size: 32px;
+}
+
+.points-rules {
+    background-color: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin: 25px auto;
+    text-align: left;
+}
+
+.points-rules h3 {
+    color: #145B3C;
+    margin-top: 0;
+}
+
+.points-rule {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+    color: #718074;
+}
+
+.points-rule strong {
+    color: #145B3C;
+    white-space: nowrap;
+}
+
+.points-limit {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #FBF7EC;
+    border-radius: 10px;
+    color: #145B3C;
+    font-weight: bold;
+    text-align: center;
+}
+.deals-main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+.deal-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin: 30px auto;
+}
+
+.deal-icon {
+    font-size: 55px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999999;
+}
+
+.deal-price {
+    color: #D49A32;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#deal-message {
+    color: #145B3C;
+    font-weight: bold;
+    background-color: #E9F0E7;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+.home-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+.hero-section {
+    background-color: #E9F0E7;
+    border-radius: 22px;
+    padding: 35px 25px;
+    margin-bottom: 35px;
+}
+
+.hero-section h2 {
+    margin-top: 15px;
+}
+
+.hero-section p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.home-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.home-option {
+    background-color: white;
+    padding: 25px 18px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 280px;
+}
+
+.home-icon {
+    font-size: 45px;
+}
+
+.home-option h3 {
+    color: #145B3C;
+}
+
+.home-option p {
+    font-size: 15px;
+    flex-grow: 1;
+}
+
+@media (max-width: 700px) {
+    .home-options {
+        grid-template-columns: 1fr;
+    }
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    text-align: left;
+}
+
+.hero-logo img {
+    width: 200px;
+    margin: 0;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-text h2 {
+    margin-top: 0;
+}
+
+.hero-text p {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.site-header {
+    background-color: #145B3C;
+    padding: 18px 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.site-header h1 {
+    color: white;
+    font-size: 28px;
+    margin: 0;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    color: #D9E8D7;
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        justify-content: center;
+        padding: 18px;
+    }
+
+    .main-nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+.deals-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.deal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deal-card p:not(.old-price):not(.deal-price) {
+    flex-grow: 1;
+}
+
+@media (max-width: 700px) {
+    .deals-container {
+        grid-template-columns: 1fr;
+    }
+}
+.discount-tag {
+    display: inline-block;
+    background-color: #D49A32;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.deal-card h3 {
+    color: #145B3C;
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.deal-card button {
+    width: 100%;
+    margin-top: 20px;
+}
+.purchase-history {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 25px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.purchase-history h3 {
+    color: #145B3C;
+}
+
+.purchase-history p {
+    font-size: 15px;
+}

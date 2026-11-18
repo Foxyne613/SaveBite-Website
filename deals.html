@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveBite - Discounted Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="site-header">
+    <h1>SaveBite</h1>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a >
+        <a href="menu.html">Menu</a >
+        <a href="deals.html">Food Deals</a >
+        <a href="points.html">My Rewards</a >
+    </nav>
+    </header>
+        <p>Discounted Food Deals</p >
+
+    <main class="deals-main">
+        <h2>Today's Food Deals</h2>
+        <p>Save money and reduce food waste!</p >
+
+        
+<div class="deals-container">
+
+    <div class="deal-card">
+        <div class="deal-icon">🍱</div>
+        <span class="discount-tag">38% OFF</span>
+        <h3>Chicken Rice</h3>
+        <p class="old-price">Original Price: RM 8.00</p >
+        <p class="deal-price">Special Price: RM 5.00</p >
+        <p>Affordable chicken rice for students.</p >
+
+        <button onclick="buyDiscountedFood('Chicken Rice', 5)">
+            Buy This Deal
+        </button>
+    </div>
+
+    <div class="deal-card">
+        <div class="deal-icon">🍜</div>
+        <span class="discount-tag">36% OFF</span>
+        <h3>Fried Noodles</h3>
+        <p class="old-price">Original Price: RM 7.00</p >
+        <p class="deal-price">Special Price: RM 4.50</p >
+        <p>Enjoy a tasty meal at a lower price.</p >
+
+        <button onclick="buyDiscountedFood('Fried Noodles', 4.5)">
+            Buy This Deal
+        </button>
+    </div>
+
+    <div class="deal-card">
+        <div class="deal-icon">🥗</div>
+        <span class="discount-tag">33% OFF</span>
+        <h3>Vegetable Rice</h3>
+        <p class="old-price">Original Price: RM 6.00</p >
+        <p class="deal-price">Special Price: RM 4.00</p >
+        <p>A simple and affordable vegetable meal.</p >
+
+        <button onclick="buyDiscountedFood('Vegetable Rice', 4)">
+            Buy This Deal
+        </button>
+    </div>
+
+</div>
+
+        <p id="deal-message"></p >
+           
+<div class="purchase-history">
+        <h3>My Latest Purchase</h3>
+        <p id="purchase-name">No purchase yet.</p >
+        <p id="purchase-price"></p >
+</div>
+
+        <button onclick="window.location.href='points.html'">
+            My Rewards
+        </button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
